@@ -1,0 +1,268 @@
+/* --- Media Queries --- */
+@media (min-width: 768px) {
+    /* Beneficios ******************************************************************************************/
+    .beneficios h1 {
+        margin: 10vh;
+        font-size: 10vmin;
+    }
+
+    .beneficios ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 3 columnas */
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+        justify-items: center; /* Centra los elementos dentro de las celdas */
+    }
+
+    .beneficios li {
+        font-size: 0.9rem;
+        max-width: 120px;
+    }
+
+    .beneficio-img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* Testimonios ***************************************************************************************/
+    .testimonios .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction:row;
+        width: 100%;
+
+    }
+
+    .testimonios .card {
+        max-width: 190px;
+        height: 250px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .testimonio-img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    /* Planes **********************************************************************************************/
+    .planes .cards {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .planes .card {
+        max-width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Beneficios ******************************************************************************************/
+    .beneficios h1 {
+        margin: 10vh;
+        font-size: 10vmin;
+    }
+
+    .beneficios ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+        justify-items: center; /* Centra los elementos dentro de las celdas */
+    }
+
+    .beneficios li {
+        font-size: 0.9rem;
+        max-width: 120px;
+    }
+
+    .beneficio-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Testimonios ***************************************************************************************/
+    .testimonios .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction:row;
+        width: 100%;
+
+    }
+
+    .testimonios .card {
+        max-width: 220px;
+        height: 200px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .testimonio-img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    /* Hero ********************************************************************************************/
+    .hero .overlay {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Aumentamos el tamaño del título */
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Menú ************************************************************************************************/
+/* Menú oculto con transición suave */
+.nav {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 0 20px;
+    z-index: 9999;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Menú desplegado */
+.nav.active {
+    max-height: 300px; /* Puedes ajustar según el contenido */
+    padding: 20px;
+}
+
+/* Icono del menú */
+.menu-icon {
+    display: block;
+    z-index: 10000;
+    transition: transform 0.3s ease;
+}
+
+/* Cuando el menú está activo, rota el ícono */
+.menu-icon.active {
+    transform: rotate(90deg);
+}
+
+
+
+/* Planes **********************************************************************************************/
+    .planes .cards {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .planes .card {
+        max-width: 200px;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 360px) and (max-width: 560px){
+        /* Testimonios ***************************************************************************************/
+        .testimonios .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction:row;
+            width: 100%;
+    
+        }
+    
+        .testimonios .card {
+            max-width: 310px;
+            height: 220px;
+            padding: 15px;
+            text-align: center;
+        }
+    
+        .testimonio-img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+}
+
+@media (max-width: 480px) {
+    .footer img {
+        max-width: 60px;
+    }
+
+    .hero .overlay {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+    /* Planes */
+    .planes .cards {
+        display: flex;
+        justify-content: center; /* Centra las tarjetas horizontalmente */
+        align-items: center; /* Centra las tarjetas verticalmente */
+        gap: 15px; /* Espaciado entre las tarjetas */
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias líneas si es necesario */
+    }
+
+
+    .planes .card {
+        max-width: 170px; /* Limita el tamaño máximo de las tarjetas */
+        flex: 1 1 200px; /* Hace que las tarjetas sean flexibles y se ajusten bien en pantallas pequeñas */
+        text-align: center; /* Centra el contenido dentro de las tarjetas */
+    }
+    
+}

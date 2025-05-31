@@ -1,0 +1,82 @@
+/* personalizacion del toggle para cambiar los temas */
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.4s;
+}
+
+.tema-claro
+{
+    background-color: #FEFEFE;
+    color: #000;
+}
+
+.tema-oscuro{
+    background-color: #111;
+    color: #fff;
+}
+
+.tema-oscuro .titulo-1{
+    color: #FFD700;
+}
+
+.tema-oscuro .beneficios .beneficio-img{
+    filter: invert(1) brightness(2);
+}
+
+.tema-oscuro .planes .card{
+    filter: invert(1) brightness(2);
+    color: #000;
+}
+
+.tema-oscuro .testimonios{
+    background-color: #FFD700;
+    color: #111;
+}
+.tema-oscuro .testimonios .card{
+    background-color: #111;
+    color: #fff;
+}
+
+.tema-oscuro .contacto{
+    color: #111;
+}
+
+.switch input{ display: none; }
+
+.switch{
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 40px;
+}
+.slider{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider{
+    background-color: #FFD700;
+}
+
+input:checked + .slider::before{
+    transform: translateX(14px);
+}
+

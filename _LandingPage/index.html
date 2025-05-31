@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Gimnasio Vikings Powers: transforma tu cuerpo y mente con nuestros planes personalizados.">
+  <meta name="keywords" content="gimnasio, entrenamiento, nutrición, vikingos, salud, fitness">
+  <meta name="author" content="Vikings Powers">
+
+  <link rel="icon" type="image/png" href="assets/Viking-PNG-Image.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media-queries.css">
+  <link rel="stylesheet" href="lights.css">
+  <script src="script.js" defer></script>
+  <script src="switch.js" defer></script>
+  <title>Vikings Powers</title>
+</head>
+<body class="tema-oscuro">
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+          <img src="/assets/Viking-PNG-Image.png" alt="Logo de Vikings Powers" width="50" />
+          <h1>Vikings Powers</h1>
+        </div>
+
+        <div class="right-items">
+          <label class="switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
+          </label>
+          <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          &#9776;
+        </div>
+      </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="overlay">
+      <h1 class="titulo-1">Transforma tu cuerpo, transforma tu vida</h1>
+      <p>Únete a nuestro gimnasio y alcanza tus objetivos. ¡La mejor versión de ti te espera!</p>
+      <button class="btn-primary">Únete ahora</button>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="beneficios">
+    <h1>Beneficios</h1>
+    <ul>
+      <li>
+        <img src="/assets/training.png" alt="Entrenamiento Personalizado" class="beneficio-img">
+        Entrenamiento Personalizado
+      </li>
+      <li>
+        <img src="/assets/routine.png" alt="Clases Grupales" class="beneficio-img">
+        Clases Grupales
+      </li>
+      <li>
+        <img src="/assets/machine.png" alt="Equipamiento de Última Generación" class="beneficio-img">
+        Equipamiento de Última Generación
+      </li>
+      <li>
+        <img src="/assets/motivation.png" alt="Ambiente Motivador" class="beneficio-img">
+        Ambiente Motivador
+      </li>
+      <li>
+        <img src="/assets/diet.png" alt="Asesoría Nutricional" class="beneficio-img">
+        Asesoría Nutricional
+      </li>
+      <li>
+        <img src="/assets/24-7.png" alt="Acceso 24/7" class="beneficio-img">
+        Acceso 24/7
+      </li>
+    </ul>
+</section>
+
+<!-- testimonios -->
+<section class="testimonios">
+    <h2>Testimonios</h2>
+    <h4>"Lo que dicen nuestros miembros"</h4>
+  
+    <div class="cards">
+      <div class="card">
+        <img src="/assets/maria.jpg" alt="Foto de María G." class="testimonio-img" />
+        <p><strong>María G. (Desde 2021):</strong> "¡Nunca pensé que podría lograr tanto! He perdido 10 kg y me siento más fuerte que nunca."</p>
+      </div>
+  
+      <div class="card">
+        <img src="/assets/juan.jpg" alt="Foto de Juan R." class="testimonio-img" />
+        <p><strong>Juan R. (Desde 2020):</strong> "El ambiente del gimnasio es increíble. Me siento con más energía."</p>
+      </div>
+
+      <div class="card">
+        <img src="/assets/maria.jpg" alt="Foto de María G." class="testimonio-img" />
+        <p><strong>María G. (Desde 2021):</strong> "¡Nunca pensé que podría lograr tanto! He perdido 10 kg y me siento más fuerte que nunca."</p>
+      </div>
+  
+      <div class="card">
+        <img src="/assets/juan.jpg" alt="Foto de Juan R." class="testimonio-img" />
+        <p><strong>Juan R. (Desde 2020):</strong> "El ambiente del gimnasio es increíble. Me siento con más energía."</p>
+      </div>
+      
+    </div>
+  </section>
+  
+<!-- Planes y precios -->
+  <section class="planes" id="planes">
+    <h2>Planes y Precios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Plan Básico</h3>
+        <img src="/assets/Basic.png" alt="Ambiente Motivador" class="beneficio-img">
+        <p>Instalaciones + Clases Grupales</p>
+        <h4>$20/mes</h4>
+      </div>
+      <div class="card">
+        <h3>Plan Premium</h3>
+        <img src="/assets/Premiun.png" alt="Ambiente Motivador" class="beneficio-img">
+        <p>Todo + Entrenamiento Personalizado</p>
+        <h4>$45/mes</h4>
+      </div>
+      <div class="card">
+        <h3>Plan VIP</h3>
+        <img src="/assets/VIP.png" alt="Ambiente Motivador" class="beneficio-img">
+        <p>Todo + Asesoría Nutricional</p>
+        <h4>$70/mes</h4>
+      </div>
+    </div>
+    <button class="btn-primary">Únete</button>
+  </section>
+
+  <!-- contacto -->
+  <section class="contacto" id="contacto">
+
+    <form class="formulario">
+      <label for="nombre"><b>Nombre</b></label>
+      <input id="nombre" type="text" placeholder="Nombre" required />
+
+      <label for="email"><b>Correo Electrónico</b></label>
+      <input id="email" type="email" placeholder="Correo Electrónico" required />
+
+      <label for="telefono"><b>Teléfono</b></label>
+      <input id="telefono" type="tel" placeholder="Teléfono" />
+
+      <label for="motivo"><b>Motivo</b></label>
+      <select id="motivo">
+        <option>Seleccione una opción</option>
+        <option>Información general</option>
+        <option>Registrarse</option>
+        <option>Consultas</option>
+      </select>
+
+      <label for="mensaje"><b>Mensaje</b></label>
+      <textarea id="mensaje" placeholder="Escriba su mensaje" rows="5"></textarea>
+
+      <button type="submit" class="btn-primary"><b>Enviar</b></button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+        <h4>Enlaces</h4>
+        <ul class="lista-enlaces">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#planes">Planes y precios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      
+    <div class="footer-section">
+      <h4>Redes Sociales</h4>
+      <div class="social-icons">
+        <a href="#"><img src="/assets/facebook-logo.png" alt="Síguenos en Facebook" class="icon-red"></a>
+        <a href="#"><img src="/assets/Instagram-Logo.png" alt="Síguenos en Instagram" class="icon-red"></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Dirección:</h4>
+      <p>Calle Ejemplo 123, Ciudad, País</p>
+      <h4>Teléfono:</h4>
+      <p>123-456-789</p>
+    </div>
+    <p>&copy; 2025 Vikings Powers. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
